@@ -2,9 +2,8 @@
 :root {
 	--main-color: #fff;
 	--static-color: rgba(51, 49, 49, 0.587);
-	--hover-color: black;
+	--hover-color: #258dd8;
 }
-
 
 * {
 	margin: 0;
@@ -65,5 +64,10 @@ main {
 .btn-start, .btn-reset, .btn-stop {
 	width: 50%;
 	height: 45%;
-	border-radius: 15px;
+	border-radius: 25px;
+	border: 2px solid var(--hover-color);
+	&:active {
+		background: var(--hover-color);
+		color: var(--main-color);
+	}
 }
